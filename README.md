@@ -41,6 +41,17 @@ For the DimHost table, I replaced the null values in the host_location and host_
 
 ![image](https://github.com/user-attachments/assets/3f731b1f-6222-45d4-8ea7-6baba5dc507f)
 
+Load
+To set up the schema for this analysis, i created seven tables: FactListings, DimHost, FactReview, FactCalendar, FactReviewScores, DimPropertyType, and DimRoomType. 
+I believe this is the best way to organize the data because each table has a specific focus. As a result, we minimize redundancy, queries become more efficient, and data management is more straightforward.
+
+In order to create the DimRoomType table and the DimPropertyType table, which help with the storage of distinct values into two separate tables, I used the CREATE TABLE command. Each table includes a column, room_type_id for DimRoomType and property_type_id for DimPropertyType, which stores unique integer values starting at 1 and incrementing by one. These columns act as primary keys for their respective tables.
+
+![image](https://github.com/user-attachments/assets/857ac024-fe67-4470-8bcc-89d448e76a06)
+
+
+
+
 
 
 
