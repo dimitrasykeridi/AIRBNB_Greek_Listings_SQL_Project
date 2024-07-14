@@ -21,10 +21,10 @@
     * Listings and rooms type tables linked together by room_type
     * Listings and properties type tables linked together by property_type
     * Listings and review scores table linked together by id
-## Extract
+# Extract
 * Data extraction comes from the three CSV files in the "Resources" folder
 
-## Cleaning
+# Cleaning
 * For the FactCalendar table , I replaced null values with zero in the price and adjusted price columns. Also, I replaced with numeric values the column is_available.
 Finally, I used the FORMAT() function to format the booking_date as yyyy-MM-dd'.
 
