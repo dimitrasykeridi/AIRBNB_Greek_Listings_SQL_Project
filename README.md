@@ -72,6 +72,7 @@ In order to create the DimRoomType table and the DimPropertyType table, which he
 ### Conclusion
 
 To sum up the findings of this project:
+
 •	There are 7335 neighborhoods with Airbnb listings in Greece and the average price is $121.45. Acropolis has the highest average listing price at $415, mainly because of its historical importance.
 
 •	Accommodations in Acropolis that can accommodate 8 people suggest a special appeal to larger groups or families looking for a shared experience near the historical monuments.
