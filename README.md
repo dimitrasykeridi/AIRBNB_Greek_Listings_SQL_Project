@@ -21,10 +21,10 @@
     * Listings and rooms type tables linked together by room_type
     * Listings and properties type tables linked together by property_type
     * Listings and review scores table linked together by id
-#### Extract
+### Extract
 * Data extraction comes from the three CSV files in the "Resources" folder
 
-# Cleaning
+### Cleaning
 * For the FactCalendar table , I replaced null values with zero in the price and adjusted price columns. Also, I replaced with numeric values the column is_available.
 Finally, I used the FORMAT() function to format the booking_date as yyyy-MM-dd'.
 
@@ -41,27 +41,27 @@ Finally, I replaced the null values in the neighborhood column with N/A and in t
 
 ![image](https://github.com/user-attachments/assets/3f731b1f-6222-45d4-8ea7-6baba5dc507f)
 
-## Load
+### Load
 * To set up the schema for this analysis, i created seven tables: FactListings, DimHost, FactReview, FactCalendar, FactReviewScores, DimPropertyType, and DimRoomType. 
 I believe this is the best way to organize the data because each table has a specific focus. As a result, we minimize redundancy, queries become more efficient, and data management is more straightforward.
 
-## FactListings table
+#### FactListings table
 
 ![image](https://github.com/user-attachments/assets/05093a26-13fc-47d9-9876-a70fefdf37fd)
 
-## FactReview table
+#### FactReview table
 
 ![image](https://github.com/user-attachments/assets/db44b34f-765e-4297-9a92-b3b8482f3d9f)
 
-## FactCalendar table
+#### FactCalendar table
 
 ![image](https://github.com/user-attachments/assets/ffe70bcc-6a7b-4905-95a0-7325e75a11aa)
 
-## FactReviewScores table
+#### FactReviewScores table
 
 ![image](https://github.com/user-attachments/assets/64ab0fca-d7de-4b3d-8c53-faaad3d5a35b)
 
-## DimHost table
+#### DimHost table
 
 ![image](https://github.com/user-attachments/assets/caeac8aa-086c-4795-a3bf-1f4cb583ad65)
 
