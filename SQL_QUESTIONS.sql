@@ -137,32 +137,7 @@ INNER JOIN DimRoomType DRT on DRT.room_type_id=FL.room_type_id
 GROUP BY FL.room_type_id,DRT.room_type
 ORDER BY AVG(price) desc;
 
---QUESTION 15 : Do higher-rated properties tend to have less availability compared to lower-rated properties?--
-WITH max_min as (
-SELECT MAX(review_scores_value) as max_review_score,MIN(review_scores_value) as min_review_score
-FROM FactReviewsScores),
-availability_count as (
-SELECT count(is_available) as cnt,FL.id
-FROM FactReviewsScores frc
-INNER JOIN Factcalendar FC on FC.listing_id=FRC.listing_id
-INNER JOIN FactListings FL on FL.id=fc.listing_id,
-max_min
-WHERE is_available=0 and 
-(review_scores_value=max_review_score or review_scores_value=min_review_score)
-GROUP BY FL.id)
-SELECT b.listing_name, cnt as booked_days,frc.review_scores_value
-FROM availability_count a
-JOIN FactListings b on a.id = b.id
-JOIN FactReviewsScores FRC on FRC.listing_id =b.id;
 
---QUESTION 16 : Are higher review scores associated with more expensive or less expensive listings?--
-WITH max as (
-SELECT max(review_scores_value) as max_review_scores_value from FactReviewsScores)
-SELECT FL.price,FL.listing_name,frc.review_scores_value
-FROM FactListings FL
-JOIN FactReviewsScores FRC on FRC.listing_id= FL.id
-JOIN max ON FRC.review_scores_value = max_review_scores_value
-ORDER BY FL.price desc;
 
 
 
