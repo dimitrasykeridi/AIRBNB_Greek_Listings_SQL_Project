@@ -25,7 +25,11 @@ Extract
 Data extraction comes from the three CSV files in the "Resources" folder
 
 Cleaning
-![image](https://github.com/user-attachments/assets/d4703261-ebb2-4a53-b5d5-aceedb47e08d)
+For the FactCalendar table , I replaced null values with zero in the price and adjusted price columns. Also, I replaced with numeric values the column is_available.
+
+![image](https://github.com/user-attachments/assets/fabf2e75-4e38-464a-9182-82c0432b4d5f)
+
+
 
 
 
