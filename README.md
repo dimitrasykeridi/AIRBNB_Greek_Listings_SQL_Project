@@ -35,11 +35,11 @@ Also, I replaced null values with zero in the price column and i extracted the n
 Then, i used the TRYCAST function to alter the datatype of bathrooms column to decimal and the CAST function to alter the data type of neighbourhood's column to VARCHAR(150).
 Finally, I replaced the null values in the neighborhood column with N/A and in the columns has_availability and instant_bookable i replaced with numeric values.
 
-![image](https://github.com/user-attachments/assets/deabd03a-1f3d-42d6-9f93-e1d3202e266e)
+  ![image](https://github.com/user-attachments/assets/deabd03a-1f3d-42d6-9f93-e1d3202e266e)
 
 * For the DimHost table, I replaced the null values in the host_location and host_neighborhood columns with 'N/A'. For the columns host_has_profile_pic, host_identity_verified, and host_is_superhost, I replaced the null values with numeric values.
 
-![image](https://github.com/user-attachments/assets/3f731b1f-6222-45d4-8ea7-6baba5dc507f)
+  ![image](https://github.com/user-attachments/assets/3f731b1f-6222-45d4-8ea7-6baba5dc507f)
 
 ### Load
 * To set up the schema for this analysis, i created seven tables: FactListings, DimHost, FactReview, FactCalendar, FactReviewScores, DimPropertyType, and DimRoomType. 
