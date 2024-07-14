@@ -2,7 +2,7 @@ DATA ANALYSIS
 I made a list of initial questions I was interested in:
 •	Which are the top five Greek neighborhoods with the highest average price per night?
 As a first step of the analysis, we want to identify the areas in Greece with the highest number of Airbnb listings. There are 7335 distinct neighborhoods with Airbnb listings in Greece and the average price is $121.54.
-  
+
 And here are the top five listed neighborhoods with the highest average price:
 The coding process: 
  
