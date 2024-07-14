@@ -1,0 +1,132 @@
+DATA ANALYSIS
+I made a list of initial questions I was interested in:
+•	Which are the top five Greek neighborhoods with the highest average price per night?
+As a first step of the analysis, we want to identify the areas in Greece with the highest number of Airbnb listings. There are 7335 distinct neighborhoods with Airbnb listings in Greece and the average price is $121.54.
+  
+And here are the top five listed neighborhoods with the highest average price:
+The coding process: 
+ 
+
+The results: Acropolis is the neighborhood with the highest average price per listing with the average price being estimated at 415$.
+ 
+
+•	What is the number of accommodates for the highly-priced neighborhood of Athens? 
+
+In order to find the most expensive neighborhood, I created a CTE expression that calculates the highest average price of listings in Athens. Then, I joined the FactListings table with the CTE expression to filter listings to only those in the most expensive neighborhood.
+
+
+The coding process:
+ 
+The results:  A listing in the Acropolis neighborhood, which has the highest average price, accommodates 8 people, with the average listing price reaching $415.
+ 
+•	Which are the top five neighborhoods with the highest revenue potential based on listing data?
+To calculate the revenue potential, we multiply the price of the listing by the maximum number of nights a traveler can stay. We do not take into account listings with N/A values in our data.
+The coding process:
+ 
+
+
+
+
+
+
+
+
+The results:  We can notice from the following table that neighborhoods in Athens tend to exhibit a higher revenue potential reaching the number of 48490.
+ 
+
+
+•	Do super hosts or regular hosts have the most properties?
+The coding process:
+ 
+The results: As we can see from the property count, regular hosts seem to own more properties than super hosts. This may be true for some hosts who are in the process of becoming superhosts or who are new to the platform.
+ 
+•	What percentage of superhosts  and non-superhosts have a profile picture?
+The coding process:
+ 
+
+
+
+The results: 98% of superhosts on Airbnb have a profile picture, compared to 94.3% of non-superhosts, showing a 3.7% higher prevalence among superhosts.
+   
+  
+
+•	What is the most common room type among superhosts and non-superhosts?
+The coding process:
+In order to find the property count for each room type among superhosts and non-superhosts, I used the Inner Join command to join the DimRoomType table and the DimHost table to the FactListings table.
+ 
+
+The results:  The majority of superhosts and non-superhosts prefer to list entire apartments on the Airbnb platform, indicating it as the ideal accommodation choice.  
+ 
+ 
+
+
+
+•	What is the average number of beds and bathrooms in listings hosted by superhosts and non-superhosts?
+The coding process: 
+  
+The results:  The average number of beds and bathrooms in listings is similar for both superhosts and non-superhosts, averaging around two beds and approximately one bathroom.
+ 
+  
+
+•	Which neighborhoods have the top five highest average review scores for properties?
+The coding process: 
+ 
+
+
+The results:  As we can see from the results presented below, neighborhoods in Athens, along with some neighborhoods in the countryside, are aiming for high ratings. Kolonaki, Koukaki, Petralona, Thissio, and Kypriadou are some of the top-rated neighborhoods, with Acropolis also ranking in the top 15 list.
+ 
+
+•	Who are the top five hosts according to the number of reviews?
+The coding process: 
+ 
+The results:  According to the results, George seems to have received the highest numbers of reviews with the number reaching the 152.
+ 
+
+
+
+
+
+
+
+•	Find the listings who have received the highest number of reviews?
+The coding process: 
+ 
+The results:  The highest number of reviews per accommodation seems to escalate to the maximum number of 5034.
+ 
+
+•	In which months do we have the most bookings?
+The coding process: 
+ 
+The results:  The month with the highest number of bookings seems to be the month of October. Also, September is high in the ranking.
+ 
+
+
+
+
+
+
+•	Find the listings with the most available dates
+The coding process: 
+ 
+
+The results:  Almost 30 listings seem to reach the maximum number of available days someone can rent an Airbnb.
+         
+
+
+
+
+
+
+•	Find the hosts with the highest number of bookings
+The coding process: 
+ 
+The results:  According to the results, George seems to have received the highest numbers of bookings with the number reaching the 14663.
+   
+
+•	Find the average price, average minimum nights, and average maximum nights per room type.
+The coding process: 
+ 
+The results:  The average minimum nights for Airbnb rentals show minimal variation across room types, ranging from 1 to 6. On the other hand, average maximum nights vary more noticeably, from 714 for private rooms to 1037 for hotel rooms.
+ 
+
+
