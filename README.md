@@ -70,6 +70,18 @@ In order to create the DimRoomType table and the DimPropertyType table, which he
 
 ![image](https://github.com/user-attachments/assets/857ac024-fe67-4470-8bcc-89d448e76a06)
 
+Conclusion
+
+To sum up the findings of this project:
+•	There are 7335 neighborhoods with Airbnb listings in Greece and the average price is $121.45. Acropolis has the highest average listing price at $415, mainly because of its historical importance.
+•	Accommodations in Acropolis that can accommodate 8 people suggest a special appeal to larger groups or families looking for a shared experience near the historical monuments.
+•	Superhosts are 3.7% more likely to have a profile picture than non-superhosts. With 98% of superhosts and 94% of non-superhosts having profile pictures, it is nearly standard practice. This small difference suggests that superhosts' preference for profile pictures may contribute to their success.
+•	The majority of Airbnb listings are owned by Non-Superhosts. Although Non-Superhosts own more properties than Superhosts, both groups show a preference for renting entire apartments, with an average of two beds.
+•	From the list of top 15 neighborhoods based on average property score, Acropolis ranks 12th. Despite its higher average apartment prices, properties consistently satisfy guests, making it an appealing choice for future Airbnb hosts.
+•	From the survey, George stands out as the host with the highest average number of reviews and bookings. Maria and Konstantinos also appear on the list. A host ranking high on both lists shows consistent guest interaction and feedback, which enhances their reputation on the platform due to the high volume of bookings and reviews.
+•	Since the average minimum nights for most room types are similar, the average maximum nights can indicate if a room type is suitable for extended stays. With hotels averaging 1037 nights and entire apartments averaging 912 nights, these accommodations are ideal for longer bookings, making them attractive to guests showcasing a factor why a guest may prefer them on the app.
+
+•	The number of bookings increases in the months of  October and September.
 
 
 
