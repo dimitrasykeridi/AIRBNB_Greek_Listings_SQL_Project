@@ -10,6 +10,7 @@ http://creativecommons.org/licenses/by/4.0/
 
 ### Concept for a Relational Database Design
 *Seven tables:
+
     * One table for listings information from the listings.csv file
     * One table with hosts information from the listings.csv file
     * One table with listings reviews from the reviews.csv file
@@ -17,7 +18,9 @@ http://creativecommons.org/licenses/by/4.0/
     * One table with rooms type information from the listings.csv file
     * One table with properties types information from the listings.csv file
     * One table with review scores for each listing from the listings.csv file
+    
 * Tables are linked together:
+  
     * Listings and hosts tables linked together by host_id
     * Listings and property availability tables linked together by id
     * Listings and property reviews tables linked together by id
@@ -33,10 +36,12 @@ Finally, I used the FORMAT() function to format the booking_date as yyyy-MM-dd'.
 
 * For the FactListings table, in order to load the data correctly, I excluded all listing id that contained the E letter. 
 Also, I replaced null values with zero in the price column and i extracted the numeric values from the bathrooms text column to create a new column called bathrooms including those. 
-Then, i used the TRYCAST function to alter the datatype of bathrooms column to decimal and the CAST function to alter the data type of neighbourhood's column to VARCHAR(150).
+Then, i used the TRYCAST function to alter the datatype of bathrooms column to decimal and the CAST function to alter the data types of
+two columns(fact_neighbourhood's and fact_neighbourhood_cleansed)to VARCHAR(150).
+Further, i used the CAST function again to change the data type of the id column to bigint and the data type of name column to nvarchar(max).
 Finally, I replaced the null values in the neighborhood column with N/A and in the columns has_availability and instant_bookable i replaced with numeric values.
 
-  ![image](https://github.com/user-attachments/assets/deabd03a-1f3d-42d6-9f93-e1d3202e266e)
+![image](https://github.com/user-attachments/assets/90b97529-44f4-40d8-ac89-651da9362c4f)
 
 * For the DimHost table, I replaced the null values in the host_location and host_neighborhood columns with 'N/A'. For the columns host_has_profile_pic, host_identity_verified, and host_is_superhost, I replaced the null values with numeric values.
 
@@ -48,7 +53,8 @@ I believe this is the best way to organize the data because each table has a spe
 
 #### FactListings table
 
-![image](https://github.com/user-attachments/assets/05093a26-13fc-47d9-9876-a70fefdf37fd)
+![image](https://github.com/user-attachments/assets/df7d38bd-155f-4dee-9b0c-07a0ac9eb5f8)
+
 
 #### FactReview table
 
@@ -72,7 +78,24 @@ In order to create the DimRoomType table and the DimPropertyType table, which he
 ![image](https://github.com/user-attachments/assets/857ac024-fe67-4470-8bcc-89d448e76a06)
 
 ### Purpose of this project 
-The purpose of this project is to create a Data Warehouse from 3 CSV files related with Airbnb listings, reviews and bookings.  The  creation of the Data Warehouse required us to use SQL Server Management Studio. After applying the Data Warehouse Architecture principles and creating a Data model that follows a Star Schema, it was decided to answer to some business questions(SQL_QUESTIONS). Below you can find a detailed description of those:
+The purpose of this project is to create a Data Warehouse from 3 CSV files related with Airbnb listings, reviews and bookings.  The  creation of the Data Warehouse required us to use SQL Server Management Studio. After applying the Data Warehouse Architecture principles and creating a Data model that follows a Star Schema, it was decided to answer to some business questions(SQL_QUESTIONS). 
+Below you can find a detailed description of those:
+
+#### Data questions
+•	Which are the top five Greek neighborhoods with the highest average price per night?
+•	What is the number of accommodates for the highly-priced neighborhood of Athens? 
+•	Which are the top five neighborhoods with the highest revenue potential based on listing data?
+•	Do Superhosts or regular hosts have the most properties?
+•	What percentage of Superhosts and Non-Superhosts have a profile picture?
+•	What is the most common room type among Superhosts and Non-Superhosts?
+•	What is the average number of beds and bathrooms in listings hosted by superhosts and non-superhosts?
+•	Which neighborhoods have the top fifteen highest average review scores for properties?
+•	Who are the top five hosts according to the number of reviews?
+•	Find the listings who have received the highest number of reviews?
+•	In which months do we have the most bookings?
+•	Find the listings with the most available dates
+•	Find the hosts with the highest number of bookings
+•	Find the average price, average minimum nights, and average maximum nights per room type.
 
 ### Conclusion
 
@@ -88,7 +111,7 @@ To sum up the findings of this project:
 
 •	From the list of top 15 neighborhoods based on average property score, Acropolis ranks 12th. Despite its higher average apartment prices, properties consistently satisfy guests, making it an appealing choice for future Airbnb hosts.
 
-•	From the survey, George stands out as the host with the highest average number of reviews and bookings. Maria and Konstantinos also appear on the list. A host ranking high on both lists shows consistent guest interaction and feedback, which enhances their reputation on the platform due to the high volume of bookings and reviews.
+•	•	From the survey, George and Toni stand out as two of the hosts with the highest average number of bookings and reviews Maria and Konstantinos also appear on the list. A host ranking high on both lists shows consistent guest interaction and feedback, which enhances their reputation on the platform due to the high volume of bookings and reviews.
 
 •	Since the average minimum nights for most room types are similar, the average maximum nights can indicate if a room type is suitable for extended stays. With hotels averaging 1037 nights and entire apartments averaging 912 nights, these accommodations are ideal for longer bookings, making them attractive to guests showcasing a factor why a guest may prefer them on the app.
 
