@@ -1,4 +1,4 @@
-## ANALYSIS OF GREEK AIRBNB LISTINGS USING SQL
+# ANALYSIS OF GREEK AIRBNB LISTINGS USING SQL
 ## Background Information
 ### Data Source
 ### Data Files
@@ -52,7 +52,8 @@ I believe this is the best way to organize the data because each table has a spe
 
 #### FactReview table
 
-![image](https://github.com/user-attachments/assets/db44b34f-765e-4297-9a92-b3b8482f3d9f)
+![image](https://github.com/user-attachments/assets/77e54e33-28fe-45b7-9ed0-9595d287bc12)
+
 
 #### FactCalendar table
 
