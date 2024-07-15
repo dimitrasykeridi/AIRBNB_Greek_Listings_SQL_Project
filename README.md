@@ -83,6 +83,7 @@ Below you can find a detailed description of those:
 
 #### Data questions
 
+
 •	Which are the top five Greek neighborhoods with the highest average price per night?
 •	What is the number of accommodates for the highly-priced neighborhood of Athens? 
 •	Which are the top five neighborhoods with the highest revenue potential based on listing data?
@@ -97,6 +98,8 @@ Below you can find a detailed description of those:
 •	Find the listings with the most available dates
 •	Find the hosts with the highest number of bookings
 •	Find the average price, average minimum nights, and average maximum nights per room type.
+
+
 
 ### Conclusion
 
