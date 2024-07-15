@@ -85,18 +85,31 @@ Below you can find a detailed description of those:
 
 
 •	Which are the top five Greek neighborhoods with the highest average price per night?
+
 •	What is the number of accommodates for the highly-priced neighborhood of Athens? 
+
 •	Which are the top five neighborhoods with the highest revenue potential based on listing data?
+
 •	Do Superhosts or regular hosts have the most properties?
+
 •	What percentage of Superhosts and Non-Superhosts have a profile picture?
+
 •	What is the most common room type among Superhosts and Non-Superhosts?
+
 •	What is the average number of beds and bathrooms in listings hosted by superhosts and non-superhosts?
+
 •	Which neighborhoods have the top fifteen highest average review scores for properties?
+
 •	Who are the top five hosts according to the number of reviews?
+
 •	Find the listings who have received the highest number of reviews?
+
 •	In which months do we have the most bookings?
+
 •	Find the listings with the most available dates
+
 •	Find the hosts with the highest number of bookings
+
 •	Find the average price, average minimum nights, and average maximum nights per room type.
 
 
