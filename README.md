@@ -1,4 +1,4 @@
-# ANALYSIS OF GREEK AIRBNB LISTINGS USING SQL
+## ANALYSIS OF GREEK AIRBNB LISTINGS USING SQL
 ## Background Information
 ### Data Source
 ### Data Files
