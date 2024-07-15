@@ -1,10 +1,13 @@
-# AIRBNB_Greek_Listings_SQL_Project
+# ANALYSIS OF GREEK AIRBNB LISTINGS USING SQL
 ## Background Information
 ### Data Source
 ### Data Files
 * First file is the listings.csv file that contains information about Airbnb listings and hosts
 * Second file is the reviews.csv file that contains information about the reviews a property has received
 * Third file is the calendar.csv file that contains information about Airbnb property availability
+The data are from the official site of Airbnb and they are licensed under a Creative Commons Attribution 4.0 International License.
+http://creativecommons.org/licenses/by/4.0/
+
 ### Concept for a Relational Database Design
 *Seven tables:
     * One table for listings information from the listings.csv file
@@ -21,10 +24,8 @@
     * Listings and rooms type tables linked together by room_type
     * Listings and properties type tables linked together by property_type
     * Listings and review scores table linked together by id
-### Extract
-* Data extraction comes from the three CSV files in the "Resources" folder
 
-### Cleaning
+### Data Warehouse Creation ( SQL_DATA TABLES)
 * For the FactCalendar table , I replaced null values with zero in the price and adjusted price columns. Also, I replaced with numeric values the column is_available.
 Finally, I used the FORMAT() function to format the booking_date as yyyy-MM-dd'.
 
@@ -68,6 +69,9 @@ I believe this is the best way to organize the data because each table has a spe
 In order to create the DimRoomType table and the DimPropertyType table, which help with the storage of distinct values into two separate tables, I used the CREATE TABLE command. Each table includes a column, room_type_id for DimRoomType and property_type_id for DimPropertyType, which stores unique integer values starting at 1 and incrementing by one. These columns act as primary keys for their respective tables.
 
 ![image](https://github.com/user-attachments/assets/857ac024-fe67-4470-8bcc-89d448e76a06)
+
+### Purpose of this project 
+The purpose of this project is to create a Data Warehouse from 3 CSV files related with Airbnb listings, reviews and bookings.  The  creation of the Data Warehouse required us to use SQL Server Management Studio. After applying the Data Warehouse Architecture principles and creating a Data model that follows a Star Schema, it was decided to answer to some business questions(SQL_QUESTIONS). Below you can find a detailed description of those:
 
 ### Conclusion
 
