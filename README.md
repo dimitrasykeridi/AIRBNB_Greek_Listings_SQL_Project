@@ -6,7 +6,7 @@
 * Second file is the reviews.csv file that contains information about the reviews a property has received
 * Third file is the calendar.csv file that contains information about Airbnb property availability
 
-###Resources 
+### Resources 
 The data are from the official site of Airbnb and they are licensed under a Creative Commons Attribution 4.0 International License.
 http://creativecommons.org/licenses/by/4.0/
 
