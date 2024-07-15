@@ -82,6 +82,7 @@ The purpose of this project is to create a Data Warehouse from 3 CSV files relat
 Below you can find a detailed description of those:
 
 #### Data questions
+
 •	Which are the top five Greek neighborhoods with the highest average price per night?
 •	What is the number of accommodates for the highly-priced neighborhood of Athens? 
 •	Which are the top five neighborhoods with the highest revenue potential based on listing data?
