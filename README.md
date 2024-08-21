@@ -1,6 +1,6 @@
 # ANALYSIS OF GREEK AIRBNB LISTINGS USING SQL
 ## Background Information
-### Data Source
+
 ### Data Files
 * First file is the listings.csv file that contains information about Airbnb listings and hosts
 * Second file is the reviews.csv file that contains information about the reviews a property has received
