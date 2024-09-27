@@ -130,7 +130,7 @@ To sum up the findings of this project:
 
 •	From the list of top 15 neighborhoods based on average property score, Acropolis ranks 12th. Despite its higher average apartment prices, properties consistently satisfy guests, making it an appealing choice for future Airbnb hosts.
 
-•	•	From the survey, George and Toni stand out as two of the hosts with the highest average number of bookings and reviews Maria and Konstantinos also appear on the list. A host ranking high on both lists shows consistent guest interaction and feedback, which enhances their reputation on the platform due to the high volume of bookings and reviews.
+•	From the survey, George and Toni stand out as two of the hosts with the highest average number of bookings and reviews Maria and Konstantinos also appear on the list. A host ranking high on both lists shows consistent guest interaction and feedback, which enhances their reputation on the platform due to the high volume of bookings and reviews.
 
 •	Since the average minimum nights for most room types are similar, the average maximum nights can indicate if a room type is suitable for extended stays. With hotels averaging 1037 nights and entire apartments averaging 912 nights, these accommodations are ideal for longer bookings, making them attractive to guests showcasing a factor why a guest may prefer them on the app.
 
